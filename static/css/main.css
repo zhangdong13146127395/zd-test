@@ -1,0 +1,361 @@
+/*  初始化浏览器默认样式 开始：  */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size: 12px;
+	font-family: 'microsoft yahei';
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img, a img {
+	border: none;
+	vertical-align: top;
+	width: 100%;
+}
+b, strong {
+	font-weight: normal;
+}
+i, em {
+	font-style: normal;
+}
+table {
+	border-collapse: collapse;
+}
+.clearfix:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*  初始化浏览器默认样式 结束。  */
+body.scroll {
+	overflow-y: hidden;
+}
+.wrap {
+	background: #fff;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	padding-top: 0.4rem;
+	padding-bottom: 2rem;
+}
+.form-show {
+	border-bottom: 1px dashed #666;
+	padding-bottom: 0.2rem;
+	margin-bottom: 0.6rem;
+}
+.form-show .item-row {
+	position: relative;
+	padding-left:2.52rem ;
+	box-sizing: border-box;
+	margin-bottom: 0.24rem;
+}
+.form-show .summary {
+	font-size: 0.26rem;
+	color: #456546;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	width: 2.52rem;
+	text-align: right;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.form-show .red {
+	color: red;
+}
+.form-show .info-inp {
+	font-size: 0.26rem;
+	color: #456546;
+	min-height: 0.44rem;
+	line-height: 0.44rem;
+	border: 1px solid #999;
+	border-radius: 0.06rem;
+	padding-left: 0.2rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	padding-right: 0.2rem;
+}
+.form-show .date-inp {
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	color: #456546;
+}
+.add-info .btn {
+	width: 1.5rem;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	text-align: center;
+	background: #3e87bc;
+	border-radius: 0.08rem;
+	font-size: 0.26rem;
+	color: #fff;
+	margin-right: 0.3rem;
+}
+.table {
+	width: 100%;
+	margin-top: 0.3rem;
+}
+.table th,
+.table td {
+	border: 1px solid #999;
+	text-align: center;
+	height: 0.64rem;
+	color: #666;
+	font-size: 0.26rem;
+}
+.table .row1 {
+	width: 50%;
+}
+.table .row2 {
+	width: 20%;
+}
+.table .row3 {
+	width: 30%;
+}
+.table .clear {
+	width: 1.2rem;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.26rem;
+	border-radius: 0.06rem;
+	background: #3f8abf;
+	margin: 0 auto;
+}
+.table .clear-all {
+	width: 2rem;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.26rem;
+	border-radius: 0.06rem;
+	background: red;
+	margin: 0 auto;
+}
+
+
+
+/* 添加人员和车辆 */
+.add-driver-cur {
+	display: none;
+}
+.add-driver-cur .content {
+	width: 5.6rem;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top: -3.65rem;
+	margin-left: -3.3rem;
+	background: #fff;
+	padding: 0.6rem 0.5rem 0.7rem;
+}
+.add-driver-cur .driver-box {
+	position: relative;
+	padding-left: 1.2rem;
+}
+.add-driver-cur .driver-box .txt {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1.2rem;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	text-align: right;
+	font-size: 0.26rem;
+	color: #666;
+}
+.add-driver-cur .car-box {
+	margin-top: 0.5rem;
+}
+.add-driver-cur .car-con-box {
+	margin-top: 0.1rem;
+	max-height:3rem;
+	overflow-y: auto;
+}
+.add-driver-cur .car-btn-parent {
+	overflow-x: auto;
+}
+.add-driver-cur .car-btn-box {
+	width: 7.2rem;
+}
+.add-driver-cur .car-btn {
+	width: 1rem;
+	text-align: center;
+	font-size: 0.28rem;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	margin: 0 0.1rem;
+	color: #666;
+}
+.add-driver-cur .car-btn.on{
+	color: #5ca2f8;
+}
+.add-driver-cur .car-con {
+	display: none;
+}
+.add-driver-cur .car-con.on {
+	display: block;
+}
+.add-driver-cur .car-con .item {
+	width: 50%;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	font-size: 0.24rem;
+	color: #666;
+	margin-bottom: 0.1rem;
+}
+.add-driver-cur .car-con .item.on {
+	color: red;
+}
+.add-driver-cur .cancel-confirm {
+	margin-top: 0.6rem;
+}
+.add-driver-cur .cancel-confirm .btn {
+	width: 1.7rem;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.28rem;
+	border-radius: 0.08rem;
+}
+.add-driver-cur .cancel {
+	background-color: #5ca2f8;
+	margin-right: 0.3rem;
+}
+.add-driver-cur .confirm {
+	background-color: red;
+}
+
+
+/* 模拟下拉框样式 开始： */
+.select {
+	position: relative;
+}
+.select dt {
+	position: relative;
+	border: 1px solid #999;
+	border-radius: 0.06rem;
+	padding-right: 0.6rem;
+	box-sizing: border-box;
+}
+.select .val {
+	font-size: 0.26rem;
+	color: #8a949e;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+	border: none;
+	outline: none;
+	width: 100%;
+	border-radius: 0.06rem;
+}
+.select .icon {
+	width: 0.27rem;
+	height: 0.12rem;
+	background: url("../images/icon1.jpg") no-repeat center;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0.165rem;
+	top:50%;
+	margin-top: -0.06rem;
+}
+.select dd {
+	position: absolute;
+	left:0;
+	top:0.52rem;
+	background: #bfc5d1;
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display: none;
+	border-radius: 0.06rem;
+	max-height: 3rem;
+	overflow-y: auto;
+}
+.select .option {
+	height: 0.48rem;
+	line-height: 0.48rem;
+	font-size: 0.26rem;
+	color: #666;
+	margin-top: 0.04rem;
+	margin-bottom: 0.04rem;
+	padding-left: 0.2rem;
+	text-align: left;
+}
+.select .option:hover {
+	background: #f5f5f5;
+}
+/* 模拟下拉框样式 结束。 */
+
+/* 模态框样式 开始： */
+.tanc {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.opa {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+.err-tis .tanc-in {
+	width: 6rem;
+	height: 3.6rem;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -1.8rem;
+	margin-left: -3rem;
+	border-radius: 0.1rem;
+}
+.err-tis .tanc-in .txt {
+	font-size: 0.30rem;
+	color: #666;
+	line-height: 0.56rem;
+	text-align: center;
+	margin-top: 0.6rem;
+}
+.err-tis .tanc-in .btn {
+	width: 1.6rem;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.3rem;
+	border-radius: 0.08rem;
+	margin: 0.7rem auto 0;
+	background: red;
+}
+/* 模态框样式 结束。 */
